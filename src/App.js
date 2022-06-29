@@ -15,6 +15,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
+        <ListItem />
         <Routes>
           <Route path='/' element={<ListItem />} />
           <Route path='/list-tests' element={<ListTest />} />
