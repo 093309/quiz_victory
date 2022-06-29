@@ -2,7 +2,7 @@
   "name": "quiz_victory",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/093309/quiz_victory.git/",
+  "homepage": "https://github.com/093309/quiz_victory.git",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
