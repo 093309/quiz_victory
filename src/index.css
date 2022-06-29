@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,600&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  /* шрифт */
+  --family: 'Raleway';
+  --fs-sm: 16px;
+  --fs-md: 20px;
+  --fw-light: 200;
+  --fw-normal: 400;
+  --fw-bold: 600;
+}
+
+/* цвета атрибутов для светлой и темной темы */
+body[theme='dark'] {
+  --colors-text: hsl(0, 6%, 90%);
+  --colors-bg: linear-gradient(45deg, #101c33, #bac8e0);
+  --colors-ui-base: hsl(209, 23%, 22%); 
+  --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
+}
+body[theme='light'] {
+  --colors-text: hsl(0, 0%, 0%);
+  --colors-bg: linear-gradient(45deg, #f5f7fa, #c3cfe2);
+  --colors-ui-base: hsl(190, 16%, 78%);  /*цвет для элементов */
+  --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+body {
+  margin: 0;
+  font-family: var( --family);
+  color: var(--colors-text);
+  font-weight: var(--fw-light);
+  background: var(--colors-bg) fixed;
+}
+
+.container{
+  max-width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
 }

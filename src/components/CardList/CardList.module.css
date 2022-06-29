@@ -1,0 +1,27 @@
+.box{
+  padding: 15px 10px;
+}
+.box h1{
+  font-size: 28px;
+}
+
+.btn{
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: none;
+  border: 1px solid var(--colors-text);
+  color: var(--colors-text);
+  transition: 0.3s;
+}
+
+.btn:hover{
+  background: rgba(144, 144, 144, 0.52);
+}
+.btn:active{
+  background: rgba(222, 221, 221, 0.759);
+}
+.btns{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
